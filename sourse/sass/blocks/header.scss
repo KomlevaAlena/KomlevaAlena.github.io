@@ -1,0 +1,194 @@
+.main-header {
+  width: 100%;
+  margin: 0 auto;
+  background-image: linear-gradient(0.25turn, rgba(0, 62, 183, 1), rgba(237, 2, 51, 1));
+}
+
+.main-nav {
+  width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.main-nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 1160px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 31px;
+  padding: 0;
+  list-style-type: none;
+  text-align: right;
+  font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.main-nav__logo-link {
+  display: block;
+  padding: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
+  color: rgba(255, 255, 255, 1);
+  font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  mask-image: url("../img/stack.svg#sprite_supergym-desk");
+  width: 120px;
+  height: 26px;
+  mask-repeat: no-repeat;
+  mask-size: 120px 26px;
+  background-color: rgba(255, 255, 255, 1);
+  user-select: none;
+
+  &:hover {
+    outline: none;
+    border: none;
+    opacity: 0.75;
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+  }
+
+  &:focus {
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 1);
+  }
+
+  &:active {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+  }
+
+  &:disabled {
+    outline: none;
+    border: none;
+    opacity: 0.5;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  }
+}
+
+.main-nav__tel {
+  color: rgba(255, 255, 255, 1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  user-select: none;
+
+  &:hover {
+    color: rgba(28, 51, 116, 1);
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+  }
+
+  &:focus {
+    color: rgba(28, 51, 116, 1);
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+  }
+
+  &:active {
+    color: rgba(16, 38, 84, 1);
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgba(16, 38, 84, 1);
+  }
+
+  &:disabled {
+    color: rgba(248, 249, 252, 1);
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+  }
+}
+
+@include vp-1365 {
+  .main-header {
+    width: 100%;
+    margin: 0 auto;
+    background-image: linear-gradient(0.25turn, rgba(0, 62, 183, 1), rgba(237, 2, 51, 1));
+  }
+
+  .main-nav {
+    width: 100%;
+  }
+
+  .main-nav__list {
+    margin-top: 27px;
+    margin-bottom: 30px;
+    width: 768px;
+  }
+
+  .main-nav__logo-link {
+    font-size: 24px;
+    line-height: 24px;
+    margin-left: 44px;
+    mask-image: url("../img/stack.svg#sprite_supergym-tablet");
+    width: 111px;
+    height: 24px;
+    mask-repeat: no-repeat;
+    mask-size: 111px 24px;
+    background-color: rgba(255, 255, 255, 1);
+  }
+
+  .main-nav__tel {
+    padding-left: 45px;
+    width: 169px;
+    font-size: 22px;
+    line-height: 24px;
+    margin-right: 43px;
+  }
+}
+
+@include vp-767 {
+  .main-header {
+    width: 100%;
+    margin: 0 auto;
+    background-image: linear-gradient(0.25turn, rgba(0, 62, 183, 1), rgba(237, 2, 51, 1));
+  }
+
+  .main-nav {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .main-nav__list {
+    width: 320px;
+    padding: 14px 15px;
+    margin: 0 auto;
+  }
+
+  .main-nav__logo-link {
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: 1.25px;
+    mask-image: url("../img/stack.svg#sprite_supergym-mobile");
+    width: 102px;
+    height: 22px;
+    mask-repeat: no-repeat;
+    mask-size: 102px 22px;
+    background-color: rgba(255, 255, 255, 1);
+  }
+
+  .main-nav__tel {
+    display: block;
+    padding: 0;
+    margin: 0;
+    width: 155px;
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: 1.75px;
+  }
+}
